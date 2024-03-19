@@ -1,0 +1,33 @@
+<!-- Search results -->
+<ul><div id="results-container" class="wrapper"></div></ul>
+
+<!-- Configuration SJS -->
+<script>
+  SimpleJekyllSearch({
+      // required
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/assets/js/search-results.json',
+
+      // optional
+      fuzzy: true,
+      noResultsText: 'No results found'
+  })
+</script>
+
+<!-- onkeyup on search box: focus mode for results container -->
+<script>
+  function focusResultsContainer() {
+
+    var value = document.getElementById('search-input').value;
+
+    if(value.length > 0) {
+      document.getElementById('HHHH').setAttribute('style', 'display: none');
+      document.getElementById('results-container').setAttribute('style', 'display: block');
+    }
+    else {
+      document.getElementById('HHHH').setAttribute('style', 'display: block');
+      document.getElementById('results-container').setAttribute('style', 'display: none');
+    }
+  }
+</script>

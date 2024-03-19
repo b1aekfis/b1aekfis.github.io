@@ -1,0 +1,578 @@
+// modified from the typora default themes
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+.selector-for-some-widget {
+  box-sizing: border-box;
+}
+
+body {
+  @bg: #f3f2ee;
+  @fg: #1f0909;
+  font-size: 16px;
+  background-color: @bg;
+  //font-family: Segoe UI, SegoeUI, Arial, sans-serif;
+  font-family:cursive, Segoe UI, SegoeUI, Arial, sans-serif;
+  color: @fg;
+  line-height: 1.5em;
+
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  blockquote,
+  q {
+    quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* styles */
+
+  /* ====== */
+
+  /* headings */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 1.875em;
+    /*30 / 16*/
+    line-height: 1.6em;
+    /* 48 / 30*/
+    margin-top: 2em;
+  }
+
+  h2 {
+    font-size: 1.5125em;
+    /*21 / 16*/
+    line-height: 1.15;
+    /*24 / 21*/
+    margin-top: 1.15em;
+    /*48 / 21*/
+    margin-bottom: 1.15em;
+    /*24 / 21*/
+  }
+
+  h3 {
+    font-size: 1.3125em;
+    /*21 / 16*/
+    line-height: 1.15;
+    /*24 / 21*/
+    margin-top: 2.285714em;
+    /*48 / 21*/
+    margin-bottom: 1.15em;
+    /*24 / 21*/
+  }
+
+  h2,h3 {
+    font-weight: normal;
+  }
+
+  h4 {
+    font-size: 1.125em;
+    /*18 / 16*/
+    margin-top: 2.67em;
+    /*48 / 18*/
+  }
+
+  h5,
+  h6 {
+    font-size: 1em;
+    /*16*/
+  }
+
+  h1 {
+    border-bottom: 1px solid;
+    margin-bottom: 1.875em;
+    padding-bottom: 0.7125em;
+  }
+
+  h2 {
+    border-bottom: 1px solid;
+    margin-bottom: 1.875em;
+    padding-bottom: 0.4082em;
+  }
+
+  /* links */
+
+  a:hover,
+  a:active {
+    text-decoration: none;
+  }
+
+  /* block spacing */
+
+  p,
+  blockquote,
+  .md-fences {
+    margin-bottom: 1.5em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1.5em;
+  }
+
+  /* blockquote */
+
+  blockquote {
+    font-style: italic;
+    border-left: 5px solid;
+    margin-left: 2em;
+    padding-left: 1em;
+  }
+
+  /* lists */
+
+  ul,
+  ol {
+    margin: 0 0 1 -0.7em;
+  }
+
+  ol li {
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+
+  ul li {
+    list-style-type:square;
+    list-style-position: outside;
+  }
+
+  li > p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* tables */
+  .md-meta,
+  .md-before,
+  .md-after {
+    color: #999;
+  }
+
+  table {
+    margin-bottom: 1.5em;
+    /*24 / 16*/
+    font-size: 1em;
+    /* width: 100%; */
+  }
+
+  thead th,
+  tfoot th {
+    padding: 0.25em 0.25em 0.25em 0.4em;
+    text-transform: uppercase;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    vertical-align: top;
+    padding: 0.25em 0.25em 0.25em 0.4em;
+  }
+
+  code,
+  .md-fences {
+    color: inherit;
+    background-color: #dadada;
+    padding-left: 1ch;
+    padding-right: 1ch;
+  }
+
+  pre code {
+    background-color: inherit;
+  }
+
+  .md-fences {
+    margin-left: 2em;
+    margin-bottom: 3em;
+  }
+
+  .md-fences .CodeMirror.CodeMirror-wrap {
+    top: -0.8em;
+  }
+
+  pre,
+  code,
+  tt {
+    font-size: 0.875em;
+    line-height: 1.714285em;
+  }
+
+  /* some fixes */
+
+  h1 {
+    line-height: 1.3em;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+  }
+
+  p + ul,
+  p + ol {
+    margin-top: -1em;
+  }
+
+  h3 + ul,
+  h4 + ul,
+  h5 + ul,
+  h6 + ul,
+  h3 + ol,
+  h4 + ol,
+  h5 + ol,
+  h6 + ol {
+    margin-top: 0.5em;
+  }
+
+  li > ul,
+  li > ol {
+    margin-top: inherit;
+  }
+
+  h2,
+  h3 {
+    margin-bottom: 0.75em;
+  }
+
+  hr {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    border-left: none;
+  }
+
+  h1,h2 {
+    border-color: #c5c5c5;
+  }
+
+  blockquote {
+    border-color: #656565;
+    color: #656565;
+    background-color: contrast(@bg, lighten(@bg, 8%), darken(@bg, 6%));
+  }
+
+  thead.md-table-edit {
+    background-color: transparent;
+  }
+
+  thead {
+    background-color: #dadada;
+  }
+
+  tr:nth-child(even) {
+    background: #e8e7e7;
+  }
+
+  hr {
+    border-color: #c5c5c5;
+  }
+
+  .task-list {
+    padding-left: 1rem;
+  }
+
+  .task-list-item {
+    list-style-type: none;
+    margin-left: -1.8em;
+
+    .task-list-item-checkbox {
+      margin-right: 0.8em;
+    }
+  }
+
+  .task-list-item input:before {
+    content: '\221A';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #ddd;
+    background-color: #f3f2ee;
+  }
+
+  .task-list-item input:checked:before,
+  .task-list-item input[checked]:before {
+    color: inherit;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  kbd {
+    color: @fg;
+  }
+
+  // modified...: main.css
+  .wrapper {
+    background-color: @bg;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .post-list-heading {
+    color: #424242;
+  }
+  .post-link {
+    //float: left;
+    color: #424242;
+    margin-top: -40px;
+  }
+  .post-link:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .post-list > li {
+    list-style-type: none;
+  }
+
+  .u-email {
+    color: #424242;
+  }:hover{
+    text-decoration: none;
+  }
+  .contact-list > li {
+    list-style-type:none;
+  }
+  .post-header {
+    margin-top: -28px;
+  }
+
+  /* GO TO TOP */
+  .go-to-top-btn {
+    all: unset;
+    position:fixed;
+
+    bottom: 35px;
+    right: 180px;
+    height: 40px;
+    width: 40px;
+    
+    background-color: #424242;
+    color: #c5c5c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #424242;
+    z-index: 1;
+  }
+  .go-to-top-btn:hover {
+    background-color: black;
+    border-color: black;
+    bottom: 37px;
+    right: 180px;
+    height: 42px;
+    width: 42px;
+  }
+
+  li > a {
+    color: #424242;
+  }
+
+  li > a:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  li > a, li > a:visited {
+    color: #424242;
+  }
+  p > a, p > a:visited {
+    color: #065588;
+  }
+
+  /* STICKY HEADER */
+  .sticky-header {
+    background-color: @bg;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    // height: max-content;
+  }
+
+  /* HOME BTN */
+  .home-btn {
+    font-size: 40px;
+    color: #424242;
+    float: left;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .home-btn:hover {
+    color: black;
+  }
+  @media screen and (max-width: 570px){
+    .home-btn {
+      font-size: 30px;
+      margin-right: 40px;
+      margin-top: 2px;
+      margin-bottom: 4px;
+    }
+  }
+  @media screen and (max-width: 410px){
+    .home-btn {
+      font-size: 22.5px;
+      margin-right: 20px;
+      margin-top: 1px;
+      margin-bottom: 2px;
+    }
+  }
+
+  /* NERD ANIMATION */
+  .nerd-animation {
+    float:left;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 4px;
+
+    -webkit-animation:spin 1.8s linear infinite;
+    -moz-animation:spin 1.8s linear infinite;
+    animation:spin 1.8s linear infinite;
+
+  }
+  @media screen and (max-width: 570px){
+    .nerd-animation {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 410px){
+    .nerd-animation{
+      margin-top: 2px;
+      font-size:25px;
+    }
+  }
+
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(-360deg); } }
+
+
+  /* GITHUB BUTTON */
+  .github-btn {
+    margin-left: 20px;
+    float: left;
+    font-size:2.8em;
+    color: #424242;
+    cursor: pointer;
+  }
+  .github-btn:hover {
+      color: black;
+  }
+  @media screen and (max-width: 570px){
+    .github-btn {
+      font-size: 2.1em;
+      margin-left: 12px;
+    }
+  }
+  @media screen and (max-width: 410px){
+    .github-btn {
+      font-size: 1.575em;
+      margin-left: 8px;
+    }
+  }
+
+
+  /* SEARCH BAR + RESULTS CONTAINER */
+
+  .search-box {
+    float: right; 
+    position: relative;
+  }
+ 
+  #search-input {
+    background-color: @bg;
+    font-size: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #c5c5c5;
+    border-width: thin;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    //font-family: Segoe UI, SegoeUI, Arial, sans-serif;  
+    font-style: italic;
+  }
+  ::-webkit-input-placeholder {
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 570px){
+    #search-input {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 380px){
+    #search-input {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 320px){
+    #search-input {
+      font-size: 10px;
+    }
+  }
+
+  #search-input[type="search"]:focus {
+    outline: none;
+    // outline-color: black;
+  }
+
+  #HHHH {
+    display: block;
+  }
+
+  #results-container {
+    display: none;
+  }
+
+  /* ABOUT */
+  .about {
+    color: #424242;
+  }
+  .about:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* MATHJAX */
+  mjx-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+}
