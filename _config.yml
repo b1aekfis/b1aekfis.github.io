@@ -30,6 +30,7 @@ github_username: b1aekfis
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +54,6 @@ plugins:
 
 # excerpt_separator: <!--more-->
 show_excerpts: true
+
+paginate: 2
+paginate_path: "/:num/"

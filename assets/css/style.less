@@ -1,10 +1,7 @@
 // modified from the typora default themes
 
+// nerdfonts
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
-
-.selector-for-some-widget {
-  box-sizing: border-box;
-}
 
 body {
   @bg: #f3f2ee;
@@ -465,6 +462,10 @@ body {
     -moz-animation:spin 1.8s linear infinite;
     animation:spin 1.8s linear infinite;
 
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(-360deg); } }
+
   }
   @media screen and (max-width: 570px){
     .e-animation {
@@ -477,11 +478,6 @@ body {
       font-size:25px;
     }
   }
-
-  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(-360deg); } }
-
 
   /* GITHUB BUTTON */
   .github-btn {
@@ -527,7 +523,7 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     
-    // font-family: Segoe UI, SegoeUI, Arial, sans-serif;  
+    // font-family: Segoe UI, SegoeUI, Arial, sans-serif;
     font-style: italic;
   }
   ::-webkit-input-placeholder {
@@ -577,6 +573,17 @@ body {
   mjx-container {
     overflow-x: auto;
     overflow-y: hidden;
+  }
+
+  /* pagination */
+  .pagination > a, .pagination > span, .pagination > b {
+    color: #424242;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+  }
+  .pagination > a:hover, .pagination > span:hover, .pagination > b, .pagination > b:hover {
+    color: @bg;
+    background-color: #424242;
   }
 
 }
