@@ -1,5 +1,5 @@
 <!-- Search results -->
-<ul><div id="results-container" class="wrapper"></div></ul>
+<ul id="results-container" class="wrapper"></ul>
 
 <!-- Configuration SJS -->
 <script>
@@ -22,11 +22,11 @@
     var value = document.getElementById('search-input').value;
 
     if(value.length > 0) {
-      document.getElementById('HHHH').setAttribute('style', 'display: none');
+      document.getElementById('HHHH').setAttribute('style', 'visibility: hidden');
       document.getElementById('results-container').setAttribute('style', 'display: block');
     }
     else {
-      document.getElementById('HHHH').setAttribute('style', 'display: block');
+      document.getElementById('HHHH').setAttribute('style', 'visibility: visible');
       document.getElementById('results-container').setAttribute('style', 'display: none');
     }
   }
