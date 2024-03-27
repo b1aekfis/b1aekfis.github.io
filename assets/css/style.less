@@ -8,7 +8,7 @@ body {
   @fg: #1f0909;
   font-size: 16px;
   background-color: @bg;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Segoe UI, SegoeUI, Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Segoe UI, SegoeUI, Arial, sans-serif;
   color: @fg;
   line-height: 1.5em;
 
@@ -349,7 +349,6 @@ body {
   .post-list > li {
     list-style-type: none;
   }
-
   .u-email {
     color: #424242;
   }:hover{
@@ -397,16 +396,13 @@ body {
   li > a {
     color: #424242;
   }
-
   li > a:hover {
     text-decoration: none;
     color: black;
   }
-
   li > a, li > a:visited {
     color: #424242;
   }
-
   li > h3 {
     margin-top: 1.15em;
   }
@@ -422,7 +418,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
-    // height: max-content;
   }
 
   /* HOME BTN */
@@ -434,27 +429,18 @@ body {
     margin-right: 80px;
     margin-top: 3px;
   }
-
   .home-btn:hover {
     color: black;
   }
-  @media screen and (max-width: 570px){
+  @media screen and (max-width: 750px) {
     .home-btn {
-      font-size: 2em;
-      margin-right: 40px;
-    }
-  }
-  @media screen and (max-width: 410px){
-    .home-btn {
-      font-size: 1.575em;
-      margin-right: 20px;
+      margin-right: 30px;
     }
   }
 
   /* ANIMATION */
   .e-animation {
     float:left;
-    text-align: center;
     font-size: 40px;
     margin-top: 4px;
 
@@ -467,19 +453,8 @@ body {
     @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(-360deg); } }
 
   }
-  @media screen and (max-width: 570px){
-    .e-animation {
-      font-size: 30px;
-    }
-  }
-  @media screen and (max-width: 410px){
-    .e-animation{
-      margin-top: 2px;
-      font-size:25px;
-    }
-  }
 
-  /* GITHUB BUTTON */
+  /* GITHUB BTN */
   .github-btn {
     margin-left: 20px;
     float: left;
@@ -491,25 +466,24 @@ body {
   .github-btn:hover {
       color: black;
   }
-  @media screen and (max-width: 570px){
-    .github-btn {
-      font-size: 2.3em;
-      margin-left: 12px;
-    }
-  }
-  @media screen and (max-width: 410px){
-    .github-btn {
-      font-size: 2em;
-      margin-left: 8px;
+  @media screen and (max-width: 550px) {
+    .github-container {
+      display: inline;
+      float: right;
     }
   }
 
   /* SEARCH BAR + RESULTS CONTAINER */
   .search-box {
-    float: right; 
-    position: relative;
+    float: right;
+    width: 40%;
   }
- 
+  @media screen and (max-width: 550px) {
+    .search-box {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
   #search-input {
     background-color: @bg;
     font-size: 20px;
@@ -518,46 +492,21 @@ body {
     border-color: #c5c5c5;
     border-width: thin;
   
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    
-    // font-family: Segoe UI, SegoeUI, Arial, sans-serif;
-    font-style: italic;
+    width: 100%;
+    padding: 10px;
   }
-  ::-webkit-input-placeholder {
-    font-style: italic;
-  }
-
-  @media screen and (max-width: 570px){
-    #search-input {
-      font-size: 14px;
-    }
-  }
-  @media screen and (max-width: 380px){
-    #search-input {
-      font-size: 12px;
-    }
-  }
-  @media screen and (max-width: 320px){
-    #search-input {
-      font-size: 10px;
-    }
-  }
-
   #search-input[type="search"]:focus {
     outline: none;
-    // outline-color: black;
   }
 
   // id
   #HHHH {
     display: block;
   }
-
   #results-container {
     display: none;
+    height: 200px;
+    overflow-y: auto;
   }
 
   /* ABOUT */
@@ -576,6 +525,9 @@ body {
   }
 
   /* pagination */
+  .pagination {
+    display: block;
+  }
   .pagination > a, .pagination > span, .pagination > b {
     color: #424242;
     padding: 5px 10px 5px 10px;
