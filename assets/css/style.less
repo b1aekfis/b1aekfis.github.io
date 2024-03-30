@@ -538,4 +538,12 @@ body {
     background-color: #424242;
   }
 
+  // normalize rounded corners on iOS
+  input {
+    border-radius: 0;
+  }
+  input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
 }
