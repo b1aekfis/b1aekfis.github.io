@@ -1,0 +1,11 @@
+---
+layout: page
+permalink: /results/
+---
+
+<!-- Search results -->
+<ul id="results-page" class="wrapper"></ul>
+
+<script>
+    document.getElementById('results-page').innerHTML = window.sessionStorage.getItem('key'); // The innerHTML property sets the HTML content for results-page
+</script>

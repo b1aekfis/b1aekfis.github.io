@@ -15,8 +15,9 @@
   })
 </script>
 
-<!-- onkeyup on search box: focus mode for results container -->
+<!-- functions -->
 <script>
+  // onkeyup on search box: focus mode for results container
   function focusResultsContainer() {
 
     var value = document.getElementById('search-input').value;
@@ -30,4 +31,18 @@
       document.getElementById('results-container').setAttribute('style', 'display: none');
     }
   }
+  
+  // redirectToResultsPage()
+  function redirectToResultsPage() {
+
+    if(document.getElementById('search-input').value != '') {
+    
+    var content = document.getElementById('results-container').innerHTML; // The innerHTML property returns the HTML content
+
+    window.sessionStorage.setItem('key', content);
+    window.location.href = "/results/";
+
+    }
+}
+
 </script>
