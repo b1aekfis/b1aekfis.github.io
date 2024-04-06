@@ -36,13 +36,20 @@
   function redirectToResultsPage() {
 
     if(document.getElementById('search-input').value != '') {
-    
-    var content = document.getElementById('results-container').innerHTML; // The innerHTML property returns the HTML content
 
-    window.sessionStorage.setItem('key', content);
-    window.location.href = "/results/";
+      var content = document.getElementById('results-container').innerHTML; // The innerHTML property returns the HTML content
+      window.sessionStorage.setItem('key', content);
+
+      document.getElementById('search-input').value = ''; // clear input field
+      document.getElementById('HHHH').setAttribute('style', 'visibility: visible'); // return to visible
+      document.getElementById('results-container').setAttribute('style', 'display: none'); // return to none
+      
+      // redirecting...
+      window.location.href = "/results/";
 
     }
+    return false;
+    
 }
 
 </script>
