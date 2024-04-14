@@ -6,7 +6,8 @@
 	],
 	"settings": {
 		"conventionalCommits.scopes": [
-			"home"
+			"home",
+			"posts"
 		]
 	}
 }
