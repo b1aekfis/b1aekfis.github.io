@@ -57,3 +57,5 @@ show_excerpts: true
 
 paginate: 2
 paginate_path: "/:num/"
+
+permalink: none
