@@ -55,7 +55,9 @@ plugins:
 # excerpt_separator: <!--more-->
 show_excerpts: true
 
-paginate: 2
+paginate: 4
 paginate_path: "/:num/"
 
 permalink: none
+
+google_analytics: G-Y0J42EVSQK
