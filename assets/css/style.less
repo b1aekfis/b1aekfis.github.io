@@ -440,14 +440,15 @@ body {
   }
 
   /* ANIMATION */
-  .e-animation {
+  .mr-animation {
     float:left;
     font-size: 40px;
-    margin-top: 4px;
+    margin-top: 2px;
+    color: #424242;
 
-    -webkit-animation:spin 1.8s linear infinite;
-    -moz-animation:spin 1.8s linear infinite;
-    animation:spin 1.8s linear infinite;
+    -webkit-animation:spin 3.8s linear infinite;
+    -moz-animation:spin 3.8s linear infinite;
+    animation:spin 3.8s linear infinite;
 
     @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
     @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -566,5 +567,13 @@ body {
     h1, h2, h3 {
       scroll-margin-top: 7em;
     }
+  }
+
+  // svg
+  .quark424242ff {
+    height: 42px;
+    width: 50px;
+    background-image: url(/assets/img/quark424242ff.svg);
+    display: inline-block;
   }
 }
