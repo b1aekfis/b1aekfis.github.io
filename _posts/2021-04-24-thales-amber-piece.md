@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Miếng hổ phách của Thales (Thalès amber piece)"
-author: Black Fish
+author: b1aekfis
 categories: blog phys
 post_description: Chuyện bắt đầu từ hơn 2.600 năm trước, có một người Hy Lạp cổ xưa, tên là Thales xứ Miletus được coi là người đầu tiên đã quan sát được điều mà ngày nay chúng ta gọi là hiện tượng điện. Ông phát hiện ra rằng một mảnh hổ phách, khi chà xát với lông thú, có thể hút những mẫu rơm nhỏ. Người ta chỉ biết đến như thế về điện trong một thời gian rất dài. Và phải chờ đợi gần 2.200 năm nữa trước khi có những cuộc điều tra mới về tính chất của hổ phách.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thuật toán Euclid (Euclidean Algorithm)"
-author: Black Fish
+author: b1aekfis
 categories: blog math
 post_description: Đầu tiên, phương pháp của Euclid để tính ước chung lớn nhất của hai số nguyên dương được giới thiệu trên nguyên tắc ước số chung lớn nhất của cặp số không thay đổi khi số lớn hơn được thay bằng hiệu của nó với số nhỏ hơn, thay cho đến khi đạt được cặp số bằng nhau.
 ---

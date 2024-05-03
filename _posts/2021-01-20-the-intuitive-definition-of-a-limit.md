@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Trực giác về phép tính Giới hạn qua các bài toán kinh điển (The Intuitive Definition of a Limit)"
-author: Black Fish
+author: b1aekfis
 categories: blog math
 post_description: Có vẻ như phương pháp lý luận hình học về tiếp tuyến đường cong của Fermat là không sai và cho ra kết quả đẹp, nhưng việc sử dụng đại lượng $e$ một cách quá trực diện mà ông đã bỏ qua "tính quá trình" trong lý luận. Mấu chốt ở chỗ, giả sử nếu Fermat lập luận với lý luận hình học về tiếp tuyến đường cong có được tính quá trình như sau...
 ---
