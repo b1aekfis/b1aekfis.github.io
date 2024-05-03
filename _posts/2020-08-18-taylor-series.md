@@ -3,7 +3,7 @@ layout: post
 title:  "Khai triển Taylor (Taylor Series)"
 author: Black Fish
 categories: blog math
-post_description: $G'(x)$ khi đó "*ít nhất*" phải là một hàm đa thức bậc nhất để có thể chủ động đồng nhất giá trị $m'$ $\Leftrightarrow$ sự yêu cầu khai triển một đa thức $G(x)$ bậc càng cao càng tốt sao cho $f(a)=G(a) \Leftrightarrow$ sai số $R^{n}(x)$  giữa hai đạo hàm cùng bậc của $G(x)$ và $f(x)$ càng được tiến về 0 thì $R(x)$ trong phép tính gần đúng cũng càng tiến về 0, cùng với đó phạm vi để tính gần đúng càng được mở rộng đáng kể.
+post_description: Khi bậc của đa thức càng cao, ở mỗi điểm xác định, sai số $R^{n}(x)$ giữa hai đạo hàm cùng bậc của $G(x)$ và $f(x)$ càng tiến về 0, theo đó $R(x)$ trong phép tính gần đúng cũng càng tiến gần về 0 hơn, phạm vi để tính gần đúng càng được mở rộng đáng kể.
 ---
 
 - [xấp xỉ tuyến tính (linear approximations)](#xấp-xỉ-tuyến-tính-linear-approximations)
@@ -34,11 +34,13 @@ Tuy vậy, phạm vi tính gần đúng của phép tính xấp xỉ tuyến tí
 
 Với phép tính xấp xỉ tuyến tính đã có trước đó, một phép tính đạo hàm bậc 2 trên $G(x)$ và $f(x)$ cho thấy tốc độ biến thiên giữa $G'(x)$ và $f'(x)$ không còn đồng nhất, hay nói một cách chính xác hơn là không thể chủ động đồng nhất vì $G'(x)$ khi đó là một hàm hằng $\Leftrightarrow$ một dự đoán rằng: "*đồ thị đạo hàm bậc nhất tại điểm* $a$ *không có cùng độ dốc*" $\Leftrightarrow$ có thể nói một cách khách quan rằng trong trường hợp giả định có thể chủ động đồng nhất được $m'$ trong phép tính đạo hàm bậc 2 nhưng không thực hiện, thì $R'(x)$ được cho là "*vẫn không hề đủ gần 0*" và vì vậy $R(x)$ được cho là "*vẫn không đủ gần 0*" nên phép tính xấp xỉ "*vẫn chưa đủ tốt*".
 
-Mặt khác, các hàm đa thức có cấu trúc đại số trực diện giúp rất dễ dàng trong việc tính toán đánh giá và vẽ đồ thị ở mọi điểm.
+Mặt khác, các hàm đa thức có cấu trúc đại số trực diện, điều này giúp cho việc tính toán đánh giá và vẽ đồ thị ở mọi điểm của chúng trở nên rất dễ dàng.
 
-Vì vậy để có thể có được một cải tiến trên phép tính xấp xỉ tuyến tính đã có, ta cần đồng ý rằng: 
+Vì vậy để có thể có được một cải tiến trên phép tính xấp xỉ tuyến tính đã có, ta cần đồng ý rằng:
 
-$G'(x)$ khi đó "*ít nhất*" phải là một hàm đa thức bậc nhất để có thể chủ động đồng nhất giá trị $m'$ $\Leftrightarrow$ sự yêu cầu khai triển một đa thức $G(x)$ bậc càng cao càng tốt sao cho $f(a)=G(a) \Leftrightarrow$ sai số $R^{n}(x)$  giữa hai đạo hàm cùng bậc của $G(x)$ và $f(x)$ càng được tiến về 0 thì $R(x)$ trong phép tính gần đúng cũng càng tiến về 0, cùng với đó phạm vi để tính gần đúng càng được mở rộng đáng kể.
+$G'(x)$ khi đó "*ít nhất*" phải là một hàm đa thức bậc nhất để có thể chủ động đồng nhất giá trị $m'$ $\Leftrightarrow$ sự yêu cầu khai triển một đa thức $G(x)$ bậc càng cao càng tốt sao cho $f(a)=G(a)$.
+
+Khi bậc của đa thức càng cao, ở mỗi điểm xác định, sai số $R^{n}(x)$ giữa hai đạo hàm cùng bậc của $G(x)$ và $f(x)$ càng tiến về 0, theo đó $R(x)$ trong phép tính gần đúng cũng càng tiến gần về 0 hơn, phạm vi để tính gần đúng càng được mở rộng đáng kể.
 
 Theo ý nghĩa đó, ta sẽ có được một *tổng vô hạn* tại $a$ để đánh giá chính xác hàm số $f(x)$ theo cách *khai triển* một đa thức bậc $n \to \infty$:
 
