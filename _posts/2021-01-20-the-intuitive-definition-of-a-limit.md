@@ -3,7 +3,7 @@ layout: post
 title:  "Trực giác về phép tính Giới hạn qua các bài toán kinh điển (The Intuitive Definition of a Limit)"
 author: Black Fish
 categories: blog math
-post_description: Có vẻ như phương pháp lý luận hình học về tiếp tuyến đường cong của Fermat là không sai và cho ra kết quả đẹp, nhưng việc sử dụng đại lượng $e$ một cách quá trực diện mà ông đã bỏ qua "tính quá trình" trong lý luận. Mấu chốt ở chỗ, giả sử nếu Fermat lập luận với lý luận hình học về tiếp tuyến đường cong có được tính quá trình như sau
+post_description: Có vẻ như phương pháp lý luận hình học về tiếp tuyến đường cong của Fermat là không sai và cho ra kết quả đẹp, nhưng việc sử dụng đại lượng $e$ một cách quá trực diện mà ông đã bỏ qua "tính quá trình" trong lý luận. Mấu chốt ở chỗ, giả sử nếu Fermat lập luận với lý luận hình học về tiếp tuyến đường cong có được tính quá trình như sau...
 ---
 
 - [Bài toán tìm hệ số góc tiếp tuyến của Fermat](#bài-toán-tìm-hệ-số-góc-tiếp-tuyến-của-fermat)
@@ -51,7 +51,7 @@ Trong tác phẩm *The Method of Fluxions (1736)*, Newton từng viết:
 
 Xét vận tốc điểm chuyển động ở trong khoảng thời gian là $\Delta t=o$ rất bé, bé như ý tưởng của đại lượng vô cùng bé. Vì $\Delta t=o$ nên lượng thay đổi của $x, y$ khi đó cũng là vô cùng bé, có thể viết thành $\Delta x=\dot{x}o$ và $\Delta y=\dot{y}o$. Giả sử cho hàm số $y=x^2$, gọi $\dot{v}_x$ là vận tốc biến thiên tức thời tại $x$ của hàm $y$, giải pháp đại số có được:
 
-$$\dot{v}_x=\frac{\dot{y}o}{\dot{x}o}=\frac{x^2-(x+\dot{x}o)^2}{x-(x+\dot{x}o)}=\frac{2x\dot{x}o+(\dot{x}o)^2}{\dot{x}o}=2x+\dot{x}o=2x$$
+$$\dot{v}_x=\frac{\dot{y}o}{\dot{x}o}=\frac{(x+\dot{x}o)^2-x^2}{(x+\dot{x}o)-x}=\frac{2x\dot{x}o+(\dot{x}o)^2}{\dot{x}o}=2x+\dot{x}o=2x$$
 
 Trong bài toán, ta thấy Newton cũng sử dụng đến đại lượng $e$, nhưng khác với Fermat, Newton xem trọng "tính quá trình" khi lý luận phương pháp cho bài toán qua hình học với ý tưởng "điểm chuyển động". Vì vậy, Newton đã thật sự chạm đến khái niệm Giới hạn trong giải pháp cho bài toán này.
 
@@ -59,10 +59,18 @@ Trong bài toán, ta thấy Newton cũng sử dụng đến đại lượng $e$,
 
 Trong khi Newton tiếp cận với khái niệm Fluxion, một cách độc lập, Leibniz cũng tạo ra ý tưởng hệ số Vi phân của mình khi làm việc với bài toán diện tích miền trên mặt phẳng. 
 
-Ông gọi $dy$ là một lượng thay đổi nhỏ vô hạn của $y$ (hay Vi phân của $y$) do (tương ứng với) một lượng thay đổi nhỏ vô hạn của $x$ (hay Vi phân của $x$) để đạt được "tốc độ biến thiên tức thời của hàm $y$ tại $x$", được biểu thị bằng hệ số Vi phân:
+Ông gọi $dy$ là một lượng thay đổi nhỏ vô hạn của $y$ (hay Vi phân của $y$) do (tương ứng với, gây ra bởi) một lượng thay đổi nhỏ vô hạn của $x$ (hay Vi phân của $x$) để đạt được "tốc độ biến thiên tức thời của hàm $y$ tại $x$", được biểu thị bằng hệ số Vi phân:
 
 $$\frac{dy}{dx}$$
 
-Giải pháp hoạt động gần như tương tự với khái niệm Fluxion, bằng cách dùng đại lượng $e$ giả định cho hệ số Vi phân để xác định tỉ lệ rồi khai triển phép tính Tích phân. Cách viết lý luận cho khái niệm Vi phân bằng các "lượng thay đổi nhỏ vô hạn" cũng mang "tính quá trình" biến thiên.
+Giống với Newton, cách viết lý luận cho khái niệm Vi phân bằng các "lượng thay đổi nhỏ vô hạn" cho thấy ông cũng xem trọng "tính quá trình" biến thiên của hàm.
 
-Sau cùng, Vi phân là một "đối tượng cơ bản" để phục vụ cho việc định nghĩa Đạo hàm. Giống với cách Archimedes, Fermat, Newton dùng $e$ để tính toán diện tích hình tròn, hệ số góc tiếp tuyến hay vận tốc tức thời của chuyển động, trở thành tiền đề sau đó cho việc định nghĩa Đạo hàm. Mặc dù theo cách hiểu hiện đại, nó không phải. Vào cuối thế kỷ 19, các nhà toán học cảm thấy rằng đại lượng $e$ chứa đựng những mơ hồ và mâu thuẫn với lý thuyết đại số thuần túy trong quá trình phát triển của nó. Một số nhà toán học thế kỷ 19 (Weierstrass, Bolzano và những người khác) đã tìm ra phép tính Giới hạn với định nghĩa có hình thức $\epsilon - \delta$ chặt chẽ về mặt đại số hơn $e$ rất nhiều, trong khi Cauchy khai thác cả khái niệm $e$ và Giới hạn (xem *Cours d'Analyse (1821)*). Tuy nhiên, ký hiệu Vi phân của Leibniz vẫn được sử dụng phổ biến vì tính kỹ thuật (ảnh hưởng nhiều đến phương pháp Tích phân đã có, điển hình trong phép biến đổi Tích phân chúng ta có thể đối phó với chúng như những ký hiệu đại số thông thường) và tính gợi ý tuyệt vời trong các tính toán, cho phép cung cấp các biểu thức gọn gàng và trực quan. Do đó ký hiệu đã được giải thích lại về mặt định nghĩa dù rằng ý tưởng của phương pháp Vi phân cho Đạo hàm không sai. Vì vậy, để thoát khỏi đó, Đạo hàm phải được định nghĩa trên phép tính Giới hạn rồi xem Đạo hàm như một "đối tượng cơ bản", còn $dy, dx$ như những giá trị đại số, với $dx$ sao cho thỏa mãn phương trình $dy=f'(x)dx$, khi đó $dy$ được gọi là Vi phân của hàm $y$ tại $x$.
+Giải pháp hoạt động gần như tương tự với khái niệm Fluxion, bằng cách dùng đại lượng $e$ giả định để xác định hệ số Vi phân, qua đó xây dựng được cơ sở tính toán thực (hiện thực hoá) cho ý tưởng Tích phân là công thức Newton-Leibniz quen thuộc ngày nay:
+
+$$ \int_{a}^{b} f(x)dx = F(x) \Big|_{a}^{b} = F(b) - F(a) $$
+
+với $F$ được gọi là Nguyên hàm của $f$.
+
+Sau cùng, Vi phân của Leibniz cũng là một "đối tượng cơ bản" để phục vụ cho việc định nghĩa Đạo hàm. Giống với cách Archimedes, Fermat, Newton dùng $e$ để tính toán diện tích hình tròn, hệ số góc tiếp tuyến hay vận tốc tức thời của chuyển động, trở thành tiền đề sau đó cho việc định nghĩa Đạo hàm. Mặc dù theo cách hiểu hiện đại, nó không phải.
+
+Vào cuối thế kỷ 19, các nhà toán học cảm thấy rằng đại lượng $e$ chứa đựng những mơ hồ và mâu thuẫn với lý thuyết đại số thuần túy trong quá trình phát triển của nó. Một số nhà toán học thế kỷ 19 (Weierstrass, Bolzano và những người khác) đã tìm ra phép tính Giới hạn với định nghĩa có hình thức $\epsilon - \delta$ chặt chẽ về mặt đại số hơn $e$ rất nhiều, trong khi Cauchy khai thác cả khái niệm $e$ và Giới hạn (xem *Cours d'Analyse (1821)*). Tuy nhiên, ký hiệu Vi phân của Leibniz vẫn được sử dụng phổ biến vì tính kỹ thuật (ảnh hưởng nhiều đến phương pháp Tích phân đã có, điển hình trong phép biến đổi Tích phân chúng ta có thể đối phó với chúng như những ký hiệu đại số thông thường) và tính gợi ý tuyệt vời trong các tính toán, cho phép cung cấp các biểu thức gọn gàng và trực quan. Do đó ký hiệu đã được giải thích lại về mặt định nghĩa dù rằng ý tưởng của phương pháp Vi phân cho Đạo hàm không sai. Vì vậy, để thoát khỏi đó, Đạo hàm phải được định nghĩa trên phép tính Giới hạn rồi xem Đạo hàm như một "đối tượng cơ bản", còn $dy, dx$ như những giá trị đại số, với $dx$ sao cho thỏa mãn phương trình $dy=f'(x)dx$, khi đó $dy$ được gọi là Vi phân của hàm $y$ tại $x$.
