@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Khai triển Taylor (Taylor Series)"
-author: Black Fish
+author: b1aekfis
 categories: blog math
 post_description: Khi bậc của đa thức càng cao, ở mỗi điểm xác định, sai số $R^{n}(x)$ giữa hai đạo hàm cùng bậc của $G(x)$ và $f(x)$ càng tiến về 0, theo đó $R(x)$ trong phép tính gần đúng cũng càng tiến gần về 0 hơn, phạm vi để tính gần đúng càng được mở rộng đáng kể.
 ---
